@@ -1,0 +1,205 @@
+.container-login{
+  width: 80%;
+  margin:0 auto;
+  margin-top: 100px;
+  margin-bottom: 24.5%;
+}
+
+.header-content{
+  text-decoration: none;
+  font-family: Century Gothic;
+  color: #08C2FA;
+  font-weight: bold;
+}
+.header-content h1 {
+  font-size: 58px
+}
+.header-content h1 span{
+  font-size: 40px;
+}
+.header-content h2 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+.header-content h2 a{
+  color: #042E72;
+}
+@media only screen and (min-width: 1000px) {
+  .container-login{
+    width: 70%;
+    margin-top: 60px;
+    height: 505px;
+    margin-bottom: 0;
+  }
+  .header-content h1 {
+    font-size: 28px;
+  }
+  .header-content h1 span{
+    font-size: 18px;
+  }
+  .header-content h2 {
+    margin: 30px 0;
+    font-size: 18px;
+  }
+  .header-content h2 span{
+    color: #042E72;
+  }
+}
+.box-login{
+  font-family: Century Gothic;
+  border: 1px solid #707070;
+  padding: 25px;
+  height: 800px;
+}
+.box-login h1{
+  font-size: 58px;
+  font-weight: bold;
+  color: #08C2FA;
+}
+.box-login label{
+  font-size: 40px;
+  color: #707070;
+  line-height: 2.0;
+}
+.box-login label:before {
+    content: '\A';
+    white-space: pre;
+}
+.box-login label:after {
+    content: '\A';
+    white-space: pre;
+}
+.box-login input[type=password], input[type=email], select{
+  border-radius: 25px;
+  border: 2px solid #08C2FA;
+  padding: 20px;
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  font-size: 30px;
+}
+
+.btn-login {
+  font-family: Century Gothic;
+  font-size: 40px;
+  background-color: #08C2FA;
+  border: none;
+  width: 30%;
+  height: 80px;
+  color: #fff;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.accounts-right-box label{
+  font-size: 20px;
+  color: #707070;
+  cursor: pointer;
+}
+.accounts-right-box label::before {
+  content: "\A";
+  white-space: pre;
+}
+
+
+.box-login a{
+  font-size: 40px;
+  color: #707070;
+  cursor: pointer;
+}
+.box-login a::before {
+  content: "\A";
+  white-space: pre;
+}
+.box-login a:hover{
+  color: #08C2FA;
+}
+@media only screen and (min-width: 1000px) {
+
+  .box-login{
+    font-family: Century Gothic;
+    border: 1px solid #707070;
+    padding: 25px;
+    width: 60%;
+    height: 300px;
+  }
+  .box-login h1{
+    font-size: 28px;
+    font-weight: bold;
+    color: #08C2FA;
+  }
+  .box-login label{
+    font-size: 18px;
+    color: #707070;
+    line-height: 1.0;
+    float: left; /* makes the element act like inline block */
+    clear: left;
+  }
+  .box-login label:before {
+      content: '\A';
+      white-space: pre;
+  }
+  .box-login input[type=password], input[type=email], input[type=text]{
+    border-radius: 25px;
+    border: 2px solid #08C2FA;
+    padding: 10px;
+    width: 60%;
+    height: 18px;
+    margin-top: 10px;
+    -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    font-size: 18px;
+    float: left; /* makes the element act like inline block */
+    clear: left;
+
+  }
+  select{
+    border-radius: 25px;
+    border: 2px solid #08C2FA;
+    padding: 10px;
+    width: 60%;
+    height: 45px;
+    margin-top: 10px;
+    -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    font-size: 18px;
+    float: left; /* makes the element act like inline block */
+    clear: left;
+
+  }
+  .btn-login {
+    font-size: 20px;
+    width: 20%;
+    height: 40px !important;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    float: left; /* makes the element act like inline block */
+    clear: left;
+    line-height: 1.0;
+    margin-top: 20px;
+
+  }
+
+  .box-login a{
+    font-size: 18px;
+    color: #707070;
+    float: left; /* makes the element act like inline block */
+    clear: left;
+    cursor: pointer;
+  }
+  .box-login a::before {
+    content: "\A";
+    white-space: pre;
+  }
+}

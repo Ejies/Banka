@@ -1,0 +1,396 @@
+
+@import url("login.css");
+@import url("signup.css");
+@import url("clientDash.css");
+@import url("currentAcc.css");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/*MY CODE*/
+* {
+  text-decoration: none;
+
+}
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+}
+header .header-brand{
+  font-family: Cooper;
+  font-size:88px;
+  font-weight: 900;
+  color: #08C2FA;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align:center;
+  padding: 30px 0;
+}
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 16px 0;
+
+}
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 40px;
+}
+header nav ul li a {
+  font-family: Century Gothic;
+  font-size:30px;
+  color: #111;
+  text-transform: uppercase;
+
+}
+.active {
+color: #08C2FA;
+}
+.menu:hover{
+color: #08C2FA;
+}
+
+header .header-login{
+  display: none;
+}
+header .header-signup{
+  display: none;
+}
+header .header-corporate{
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    height: 100px;
+
+  }
+  header .header-brand{
+    font-size:35px;
+    font-weight: 900;
+    margin: 31px 0;
+    text-align:left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #111;
+    float: left;
+
+  }
+
+  header nav ul {
+    margin: 5px 0px 0px 20px;
+    float: left;
+    padding: 16px 0;
+  }
+  header nav ul li {
+
+    padding: 0 20px;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+    font-size: 16px;
+  }
+  header .header-login{
+    display: block;
+    font-family: Century Gothic;
+    font-size:16px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    padding: 0 20px;
+
+  }
+  header .header-signup{
+    display: block;
+    font-family: Century Gothic;
+    font-size:16px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  header .header-corporate{
+    display: block;
+    font-family: Century Gothic;
+    font-size:16px;
+    color: #08C2FA;
+    text-transform: uppercase;
+    line-height: 40px;
+    float:right;
+    margin-right: 45px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  .admin-btn{
+    display: block;
+    font-family: Century Gothic;
+    font-size:10px;
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #08C2FA;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .success{
+    background-color: green;
+  }
+  .danger{
+    background-color: red;
+  }
+  .mild{
+    background-color: #add8e6;
+  }
+
+}
+
+/*INDEX*/
+.wrapper{
+
+  margin-bottom: 10%;
+}
+.index-banner{
+  display: block;
+  width: 100%;
+  height: 520px;
+  padding-top: 80px;
+  background-image: url("../img/banner-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.index-banner h1{
+  font-family: Century Gothic;
+  font-size:90px;
+  font-weight: bold;
+  color: #fff;
+}
+.index-banner h2{
+  font-family: Century Gothic;
+  font-size:30px;
+  color: #fff;
+  font-style:italic;
+  line-height: 40px;
+}
+.banner-content{
+  margin: 0 150px;
+  padding: 20px 16px;
+  border-left: 8px solid #FFF;
+
+}
+.banner-button{
+  font-family: Century Gothic;
+  background-color: #e9f7ff;
+  border: none;
+  color: #08C2FA;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 10px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 10px -7px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 10px -7px rgba(0,0,0,0.75);
+}
+.b-login{
+  padding: 20px;
+  margin-left: 150px ;
+}
+.b-signup{
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.index-box div {
+  margin: 50px 50px 0;
+  width: calc(100% - 150px);
+  padding-bottom: 20px;
+  background-color: #e9f7ff;
+  -webkit-box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.75);
+  
+}
+.index-box div h3{
+  font-family: Century Gothic;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #737373;
+  text-transform: uppercase;
+}
+.index-box div h2{
+  font-family: Century Gothic;
+  font-size: 12px;
+  line-height: 25px;
+  margin:40px 40px 40px 40px;
+  color: #737373;
+  text-align: center
+
+}
+.box img{
+  margin-top: 20px;
+  margin-left: calc((100% - 150px) / 2);
+  width: 190px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    width: 80%;
+    margin:0 auto;
+    height: 300px;
+  }
+  .top{
+    margin-top: 10px;
+  }
+  .index-banner{
+    height: 350px;
+  }
+ 
+  .mobile{
+    display: none;
+  }
+  .index-box div {
+    margin: 16px 16px 0;
+    height: 250px;
+    background-color: #DAF6FE;
+    
+
+  }
+  .index-box div h3{
+    font-size: 20px;
+    
+  }
+
+  .box{
+    width: calc(30% - 10px) !important;
+    float: left;
+  }
+  .box img{
+    width: 70px;
+    margin-left: calc((100% - 50px) / 2);
+  }
+  .index-box div h2{
+    margin:20px 20px 20px 20px;
+    
+  
+  }
+  
+  .banner-button{
+    font-family: Century Gothic;
+    background-color: #08C2FA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .b-login{
+    display: none;
+  }
+  .b-signup{
+    display: none;
+  }
+}
+/*FOOTER*/
+footer{
+  width: 100%;
+  padding: 40px 0;
+  height: 61px;
+  background-color: #0083cf;
+
+
+}
+footer h3{
+  font-family: Century Gothic;
+  font-size: 30px;
+  font-style: italic;
+  color:#fff;
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  footer{
+    width: 100%;
+    padding: 40px 0;
+    height: 10px;
+    margin-top: 0;
+  }
+  footer h3{
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-style: italic;
+    color:#fff;
+    text-align: center;
+  }
+}
