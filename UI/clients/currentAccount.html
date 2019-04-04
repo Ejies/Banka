@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Banka | light-weight banking application</title>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="header-brand">BANKA</a>
+      <nav>
+        <ul>
+          <li ><a href="../index.html" class="active">Home</a></li>
+          <li><a href="#" class="menu">About</a></li>
+          <li><a href="#" class="menu">Contact</a></li>
+        </ul>
+        <a href="../login.html" class="header-login banner-button">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="header-bar">
+        <nav>
+          <ul>
+            <li><span>Mr. John Doe</span></li>
+            <li><a href="dashboard.html">Your accounts &#x25BE;</a></li>
+            <li><a href="dashboard.html">Your profile</a></li>
+            <li><a href="dashboard.html">Help & support</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div class="dash-wrapper ca-wrapper">
+          <section  class="dash-box">
+            <div class="left-box">
+              <div class="header-left-box">
+                My Accounts
+              </div>
+              <div class="header-left-box-content current">
+                <h2>Current accounts <span>01-233-322-32</span></h2>
+                <h1>&#8358;300,000 <span>current balance</span> </h1>
+              </div>
+              <div class="header-left-box-content">
+                <h2>Savings accounts <span><br>01-224-322-96</span></h2>
+                <h1>&#8358;1,500,000 <span>current balance</span> </h1>
+              </div>
+
+            </div>
+            <div class="top-right-box">
+              <img src="https://img.icons8.com/ultraviolet/26/000000/home.png" onclick="window.location = 'dashboard.html'"><h3>New Transaction <span>&#43;</span></h3>
+            </div>
+            <div class="accounts-right-box">
+              <div class="transaction-right-box">
+                <h1>Transactions History</h1>
+
+                <div>
+                        <table>
+                                <tr>
+                                  <th>Date</th>
+                                  <th>Description</th>
+                                  <th>Type</th>
+                                  <th>In ( &#8358;)</th>
+                                  <th>Out ( &#8358;)</th>
+                                  <th>Balance ( &#8358;) </th>
+                                </tr>
+                                <tr onclick="window.location = 'transactionDetail.html'">
+                                  <td >24 Mar 2019</td>
+                                  <td>Dominos</td>
+                                  <td>DR</td>
+                                  <td></td>
+                                  <td>3,000</td>
+                                  <td>300,000</td>
+
+                                </tr>
+                                <tr onclick="window.location = 'transactionDetail.html'">
+                                  <td>14 Mar 2019</td>
+                                  <td>LLC</td>
+                                  <td>DR</td>
+                                  <td></td>
+                                  <td>1,500</td>
+                                  <td>301,500</td>
+                                </tr>
+                                <tr onclick="window.location = 'transactionDetail.html'">
+                                  <td>1 Mar 2019</td>
+                                  <td>AIICO Inc</td>
+                                  <td>CR</td>
+                                  <td>150,000</td>
+                                  <td></td>
+                                  <td>151,500</td>
+                                </tr>
+                                <tr onclick="window.location = 'transactionDetail.html'">
+                                  <td>28 Feb 2019</td>
+                                  <td>Farm City</td>
+                                  <td>DR</td>
+                                  <td></td>
+                                  <td>18,000</td>
+                                  <td>133,500</td>
+
+                                    </tr>
+                                    <tr onclick="window.location = 'transactionDetail.html'">
+                                      <td>12 Feb 2019</td>
+                                      <td>Victor Mark</td>
+                                      <td>CR</td>
+                                      <td>18,000</td>
+                                      <td></td>
+                                      <td>151,500</td>
+                                    </tr>
+                                    <tr onclick="window.location = 'transactionDetail.html'">
+                                      <td>2 Feb 2019</td>
+                                      <td>Babes</td>
+                                      <td>DR</td>
+                                      <td></td>
+                                      <td>180,000</td>
+                                      <td>151,500</td>
+                                    </tr>
+                                    <tfoot>
+                                      <td colspan="6">View More <span>&#43;</span> </td>
+                                    </tfoot>
+                              </table>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+          </section>
+
+      </div>
+
+      <footer>
+        <h3>© 2019 Andela Developer Challenge - Emmanuel Eshofonie</h3>
+      </footer>
+
+    </main>
+  </body>
+</html>
