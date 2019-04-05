@@ -1,8 +1,9 @@
 # Banka
 Banka is a light-weight core banking application that powers banking operations like account creation, customer deposit and withdrawals. The concept of this app supports a single bank, where users can signup and create bank accounts online, but must visit the branch to withdraw or deposit money..
 
-#  Complete Tasks
+#  Completed Tasks
  > **[Complete UI Pages](https://ejies.github.io/Banka/UI/)** 
+ 
  >  **[Pivot tracker board](https://www.pivotaltracker.com/n/projects/2320015)**
 
 ## Installation
@@ -32,6 +33,7 @@ Banka is a light-weight core banking application that powers banking operations 
 This challenge is part of the ADC Bootcamp 43 Andela.
 
 Credits to [icon8](https://icons8.com/) for the awesome icons
+
 and [mmtuts](https://www.youtube.com/watch?v=kbLfWKGVsMQ&t=2031s) for the very insightful tutorial on frontend design.
 
 
