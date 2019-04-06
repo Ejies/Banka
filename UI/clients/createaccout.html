@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Banka | light-weight banking application</title>
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="header-brand">BANKA</a>
+      <nav>
+        <ul>
+          <li ><a href="../index.html" class="active">Home</a></li>
+          <li><a href="#" class="menu">About</a></li>
+          <li><a href="#" class="menu">Contact</a></li>
+        </ul>
+        <a href="../login.html" class="header-login banner-button">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="header-bar">
+        <nav>
+          <ul>
+            <li><span>Mr. John Doe</span></li>
+            <li><a href="dashboard.html">Your accounts &#x25BE;</a></li>
+            <li><a href="dashboard.html">Your profile</a></li>
+            <li><a href="dashboard.html">Help & support</a></li>
+          </ul>
+        </nav>
+      </section>
+      <div class="dash-wrapper">
+          <section  class="dash-box">
+            <div class="dash-message-box">
+              <img src="../assets/img/mail.png">
+              <h2> You have <br>2 new messages</h2>
+              <span class="view-inbox">View Inbox</span>
+            </div>
+            <div class="top-right-box">
+              <img src="https://img.icons8.com/ultraviolet/26/000000/home.png" onclick="window.location = 'dashboard.html'"><h3><span>&#43;</span></h3>
+            </div>
+            <div class="accounts-right-box">
+              <h1>Create Account</h1>
+              <label for="accType">Account Type:</label><br>
+              <select id="accType">
+                <option value="">--Select Account Type--</option>
+                <option value="">Current Account</option>
+                <option value="">Savings Account</option>
+              </select><br>
+              <input type="submit" name="" value="Create" onclick="location.href = 'dashboard.html';" class="btn-login">
+
+            </div>
+
+
+          </section>
+
+      </div>
+
+      <footer>
+        <h3>© 2019 Andela Developer Challenge - Emmanuel Eshofonie</h3>
+      </footer>
+
+    </main>
+  </body>
+</html>

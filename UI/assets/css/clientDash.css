@@ -1,0 +1,325 @@
+.header-bar{
+  font-family: Century Gothic;
+  width: 100%;
+  height: 200px;
+  -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  background-color: #08C2FA;
+  color: #fff;
+
+}
+.header-bar nav ul {
+  display: block;
+  /* width: 100% !important; */
+  padding: 20px 0;
+
+}
+.header-bar nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 30px 20%;
+  text-decoration: none;
+
+}
+.header-bar nav ul li span {
+  font-family: Century Gothic;
+  font-size:60px;
+  font-weight: bold;
+  color: #fff;
+
+
+}
+.header-bar nav ul li a {
+  display: none;
+
+}
+@media only screen and (min-width: 1000px) {
+  .header-bar{
+    font-family: Century Gothic;
+    width: 100%;
+    height: 90px;
+    -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    background-color: #08C2FA;
+    color: #fff;
+
+  }
+
+  .header-bar nav ul {
+    display: block;
+    width: 100% !important;
+
+  }
+  .header-bar nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+
+  }
+  .header-bar nav ul li span {
+    font-family: Century Gothic;
+    font-size:30px;
+    font-weight: bold;
+    color: #fff;
+
+
+  }
+  .header-bar nav ul li a {
+    display: block;
+    font-family: Century Gothic;
+    font-size:15px;
+    color: #fff;
+    padding: 0 40px;
+
+  }
+}
+.dash-message-box{
+  font-family: Century Gothic;
+  font-weight: bold;
+  color: #fff;
+  width: 20% !important;
+  float: left;
+  background-color: #08C2FA;
+  height: 220px;
+  padding: 0 20px;
+  margin: 10px 35%;
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+
+}
+.dash-message-box img {
+  width: 85%;
+  margin: 0px 3%;
+  padding: 25px 50px 0px 25px;
+}
+.dash-message-box h2 {
+  display: none;
+}
+
+.view-inbox{
+display: none;
+}
+.dash-wrapper{
+
+  height: 1300px;
+}
+@media only screen and (min-width: 1000px) {
+  .dash-wrapper{
+    width: 70%;
+    margin:0 auto;
+    height: 650px;
+  }
+  .dash-box div {
+    margin: 16px 16px 0;
+  }
+  .dash-box div h3{
+    font-size: 20px;
+  }
+  .dash-message-box{
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: #fff;
+    width: calc(30% - 160px) !important;
+    float: left;
+    background-color: #08C2FA;
+    height: 180px;
+    padding: 0 20px;
+    border-radius: 0%;
+    behavior: url();
+
+
+  }
+  .dash-message-box img {
+    width: 30%;
+    margin: 10px 0;
+    padding: 0px 20px 0px 40px;
+  }
+  .dash-message-box h2  {
+
+    display: block;
+    font-size: 15px;
+    float: right;
+    margin-left: 21%;
+    margin-bottom: 20px;
+  }
+
+  .view-inbox{
+    display: table;
+    background-color: #4CD2FA;
+    line-height: 15px;
+    padding: 10px 10px;
+    margin-top: 20px;
+  }
+}
+.top-right-box{
+  font-family: Century Gothic;
+  font-weight: bold;
+  font-size: 40px;
+  color: #08C2FA;
+  text-align: center;
+  padding: 90px 25px;
+  margin: 10px 20%;
+  width: 55% !important;
+  float: right;
+  background-color: #FAFCFD;
+  height: 60px;
+  -moz-box-shadow:    inset 0 0 10px #E8F2F5;
+  -webkit-box-shadow: inset 0 0 10px #E8F2F5;
+  box-shadow:         inset 0 0 10px #E8F2F5;
+}
+.accounts-right-box{
+  width: 55% !important;
+  padding: 90px 25px;
+  margin: 10px 20%;
+  background-color: #FAFCFD;
+  height: 70%;
+  float: right;
+  border-top: 5px solid #08C2FA;
+  -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+  box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+
+}
+
+.accounts-right-box h2{
+  font-family: Century Gothic;
+  font-weight: bold;
+  font-size: 25px;
+  color: #08C2FA;
+  text-transform: uppercase;
+}
+
+.accounts-right-box h2 span{
+  font-size: 19px;
+  font-weight: normal;
+  color: #747779;
+}
+.accounts-right-box h1{
+  font-family: Century Gothic;
+  font-weight: bold;
+  font-size: 45px;
+  color: #747779;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.accounts-right-box h1 span{
+  font-size: 19px;
+  font-weight: normal;
+  color: #747779;
+}
+.accounts-right-box h1 a{
+  display: block;
+  font-family: Century Gothic;
+  font-size:19px;
+  color: #08C2FA;
+  text-transform: uppercase;
+  line-height: 40px;
+  margin-top: 20px;
+  float:right;
+  background-color: #08C2FA;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .top-right-box{
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: #08C2FA;
+    text-align: center;
+    padding: 20px;
+    width: 70% !important;
+    float: right;
+    background-color: #FAFCFD;
+    height: 20px;
+    -moz-box-shadow:    inset 0 0 10px #E8F2F5;
+    -webkit-box-shadow: inset 0 0 10px #E8F2F5;
+    box-shadow:         inset 0 0 10px #E8F2F5;
+  }
+  .top-right-box a{
+    color: #08C2FA;
+  }
+  .top-right-box:hover{
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: #747779;
+    text-align: center;
+    padding: 20px;
+    width: 70% !important;
+    float: right;
+    background-color: #DAF6FE;
+    height: 20px;
+    -moz-box-shadow:    inset 0 0 10px #E8F2F5;
+    -webkit-box-shadow: inset 0 0 10px #E8F2F5;
+    box-shadow:         inset 0 0 10px #E8F2F5;
+  }
+  .accounts-right-box{
+    width: 70% !important;
+    padding: 20px;
+    background-color: #FAFCFD;
+    height: 70%;
+    float: right;
+    border-top: 5px solid #08C2FA;
+    -webkit-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    -moz-box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+    box-shadow: 10px 10px 10px -12px rgba(112,112,112,1);
+
+  }
+  .accounts-right-box h2{
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 25px;
+    color: #08C2FA;
+    text-transform: uppercase;
+  }
+  .accounts-right-box h2 span{
+    font-size: 19px;
+    font-weight: normal;
+    color: #747779;
+  }
+  .accounts-right-box h1{
+    font-family: Century Gothic;
+    font-weight: bold;
+    font-size: 45px;
+    color: #747779;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .accounts-right-box h1 span{
+    font-size: 19px;
+    font-weight: normal;
+    color: #747779;
+  }
+  .accounts-right-box h1 a{
+    display: block;
+    font-family: Century Gothic;
+    font-size:19px;
+    color: #08C2FA;
+    text-transform: uppercase;
+    line-height: 40px;
+    margin-top: 20px;
+    float:right;
+    background-color: #08C2FA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 0 20px;
+  }
+
+}
