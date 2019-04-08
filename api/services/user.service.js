@@ -12,7 +12,8 @@ const UserService = {
       newUser.type = user.type;
       newUser.email = user.email;
       newUser.isAdmin = user.isAdmin;
-
+      
+      return newUser;
     });
     return validUsers;
   },
@@ -28,7 +29,7 @@ const UserService = {
   },
 
   getAUser(id) {
-    const user = dummyData.users.find(user => user.id = id);
+    const user = dummyData.users.find(user => user.id == id);
     return user || {};
   }
 };

@@ -30,11 +30,11 @@ const UserController = {
   },
   getSingleUser(req, res) {
     const id = req.params.id;
-    const foundUser = UserService.addUser(id);
+    const foundUser = UserService.getAUser(id);
     return res.json({
       status: 'success',
       data: foundUser
-    }).status(201);
+    }).status(200);
   }
 
 };
