@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js",
-    "test": "nyc mocha --require @babel/register ./api/__test__/*.test.js --recursive --exit"
+    "test": "nyc mocha ./api/__test__/*.test.js --require @babel/register --exit"
   },
   "repository": {
     "type": "git",
