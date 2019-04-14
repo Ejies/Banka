@@ -1,37 +1,46 @@
+import bcrypt from 'bcrypt';
 import dummyData from '../utilitys/dummyData';
-import User from '../models/user.models';
+import validator from '../utilitys/user.validation';
+
 
 const UserService = {
-  fetchAllUsers() {
-    const validUsers = dummyData.users.map((user) => {
-      const newUser = new User();
-      newUser.id = user.id;
-      newUser.firstname = user.firstname;
-      newUser.lastname = user.lastname;
-      newUser.password = user.password;
-      newUser.type = user.type;
-      newUser.email = user.email;
-      newUser.isAdmin = user.isAdmin;
-      
-      return newUser;
-    });
-    return validUsers;
-  },
+  signUp(user) {
+    // lets validate the users input
+    const { error } = validator.checkUser(user);
+    if (error) return { status: 400, err: error.details[0].message };
+    // lets check if the email entered already exist
+    const checkUser = dummyData.users.find(useremail => useremail.email === user.email);
+    if (checkUser) return { status: 400, err: 'This email address already exist!' };
 
-  addUser(user) {
+    // lets get the id of the last user in the record and assign an increament +1 to the new record
     const userLength = dummyData.users.length;
     const lastId = dummyData.users[userLength - 1].id;
     const newId = lastId + 1;
     user.id = newId;
+
+    // lets hash the password entered by the user
+    user.password = bcrypt.hashSync(user.password, 10);
+
     dummyData.users.push(user);
     return user;
-
   },
 
-  getAUser(id) {
-    const user = dummyData.users.find(user => user.id == id);
-    return user || {};
-  }
+  signIn(user) {
+    // Validating user inputs
+    const { error } = validator.checkLogin(user);
+    if (error) return { status: 400, err: error.details[0].message };
+
+    // Chech whether the entered email match the one in database
+    const checkUser = dummyData.users.find(username => username.email === user.email);
+    if (!checkUser) return { status: 400, err: 'Incorrect Email' };
+
+    // Chech whether the entered email match the one in database
+    const findPassword = userPassword => userPassword.password === user.password;
+    const checkPassword = dummyData.users.find(findPassword);
+    if (!checkPassword) return { status: 400, err: 'Incorrect Password' };
+
+    return checkUser;
+  },
 };
 
 export default UserService;
