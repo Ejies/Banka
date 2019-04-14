@@ -3,6 +3,7 @@ class User {
     this.id = null;
     this.email = null;
     this.firstname = null;
+    this.lastname = null;
     this.password = null;
     this.type = null;
     this.isAdmin = null;
@@ -10,4 +11,3 @@ class User {
 }
 
 export default User;
-
