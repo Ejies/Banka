@@ -4,7 +4,8 @@
   "description": "banka application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
+    "start": "npm run build && node dist/index.js",
+    "build": "babel api -d dist",
     "test": "nyc mocha ./api/__test__/*.test.js --require @babel/register --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
