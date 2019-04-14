@@ -1,5 +1,8 @@
 # Banka
+[![Coverage Status](https://coveralls.io/repos/github/Ejies/Banka/badge.svg?branch=develop)](https://coveralls.io/github/Ejies/Banka?branch=develop) [![Build Status](https://travis-ci.org/Ejies/Banka.svg?branch=develop)](https://travis-ci.org/Ejies/Banka) [![Maintainability](https://api.codeclimate.com/v1/badges/fc95b5caa189102ed88e/maintainability)](https://codeclimate.com/github/Ejies/Banka/maintainability)
+
 Banka is a light-weight core banking application that powers banking operations like account creation, customer deposit and withdrawals. The concept of this app supports a single bank, where users can signup and create bank accounts online, but must visit the branch to withdraw or deposit money..
+
 
 #  Completed Tasks
  > **[Complete UI Pages](https://ejies.github.io/Banka/UI/)** 
