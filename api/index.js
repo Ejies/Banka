@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import allRoutes from './routes/routes';
 
 const app = express();
-const PORT = 9001;
+const PORT = process.env.PORT || 9001;
 
 app.use(bodyParser.json());
 
