@@ -1,7 +1,7 @@
 import { Router } from 'express';
 // controllers
 import UserController from '../controllers/user.controllers';
-import AccountController from '../controllers/account.controller';
+import AccountController from '../controllers/accountController';
 import TransactionController from '../controllers/transactions.controller';
 import auth from '../middleware/auth';
 
