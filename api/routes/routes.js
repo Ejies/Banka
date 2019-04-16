@@ -1,8 +1,8 @@
 import { Router } from 'express';
 // controllers
-import UserController from '../controllers/user.controllers';
+import UserController from '../controllers/userControllers';
 import AccountController from '../controllers/accountController';
-import TransactionController from '../controllers/transactions.controller';
+import TransactionController from '../controllers/transactionsController';
 import auth from '../middleware/auth';
 
 const router = Router();

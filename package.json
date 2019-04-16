@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "build": "babel api -d dist",
-    "test": "nyc mocha ./api/__test__/*.test.js --require @babel/register --exit",
+    "test": "nyc mocha ./api/__test__/*Test.js --require @babel/register --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {

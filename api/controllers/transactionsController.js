@@ -1,5 +1,5 @@
 import moment from 'moment';
-import TransactionService from '../services/transactions.service';
+import TransactionService from '../services/transactionsService';
 import dummyData from '../utilitys/dummyData';
 
 

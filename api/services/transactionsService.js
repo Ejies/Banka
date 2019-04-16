@@ -1,7 +1,7 @@
 import dummyData from '../utilitys/dummyData';
 import validator from '../utilitys/transaction.validation';
 import Transaction from '../models/transaction.model';
-import transactionController from '../controllers/transactions.controller';
+import transactionController from '../controllers/transactionsController';
 
 const accountService = {
 
