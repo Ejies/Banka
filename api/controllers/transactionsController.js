@@ -7,10 +7,10 @@ const transactionController = {
   fetchAllTransaction(req, res) {
     const { accountNumber } = req.params;
     const allTransactions = TransactionService.fetchAllTransaction(accountNumber);
-    returnreturn res.status(200).json({
+    return res.status(200).json({
         success: false,
         Transactions: allTransactions,
-        });
+    });
   },
 
   credit(req, res) {
