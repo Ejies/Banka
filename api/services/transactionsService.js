@@ -26,15 +26,7 @@ const accountService = {
 
       return newTransaction;
     });
-    // const counts = dummyData.transactions.reduce((p, c) => {
-    //   const { name } = c.accountNumber;
-    //   if (!p.hasOwnProperty(name)) {
-    //     p[name] = 0;
-    //   }
-    //   p[name] + 1;
-    //   return p;
-    // }, {});
-
+    
     return transaction;
   },
 
