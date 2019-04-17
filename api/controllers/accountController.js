@@ -1,4 +1,4 @@
-import AccountService from '../services/account.service';
+import AccountService from '../services/accountService';
 
 const jwt = require('jsonwebtoken');
 
